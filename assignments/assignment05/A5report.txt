@@ -1,0 +1,46 @@
+% A5 Lab Report
+% Walker Wood
+% October 24, 2015
+
+# Benchmarking the ArrayStrand implementation
+
+## Show that ArrayStrand.cutAndSplice() is O(N)
+Record your response here.
+recombinant length
+
+## Determine the largest power-of-two splice supported with 512M heap
+
+32,768 is the largest, power-of-two splice that a 512MB heap supports.
+
+## Determine the largest power-of-two splice supported with 1024M heap
+
+The largest power-of-two splice that a 1G heap supports is 131,072
+
+## Determine the largest power-of-two splice supported as heap doubles
+
+At 8G, the largest power-of-two splice supported is 1,048,576
+
+
+# Verifying the LinkedStrand implementation
+
+## Show that LinkedStrand.cutAndSplice() is O(1)
+
+As the recombinant length increases, time remains at approximately 0.5 seconds with slight variation
+due to big-O masking.
+
+times
+[1.240, 0.639, 0.573, 0.574, 0.562, 0.568, 0.556, 0.499]
+recombinant length (rounded for ease of reading)
+[4.8 mil, 4.9 mil, 5.2 mil, 7.2 mil, 9.9 mil, 15.2 mil, 25.7 mil, 46.9 mil]
+
+## Determine the largest power-of-two splice supported with 512M heap
+
+0, the heap is out of space before it can determine as the recursion based method takes up more heap space
+
+## Determine the largest power-of-two splice supported with 1024M heap
+
+Again 0
+
+## Determine the largest power-of-two splice supported as heap doubles
+
+At 8G heap space the largest size supported is 1,073,741,824

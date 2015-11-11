@@ -1,0 +1,5 @@
+generate array of sizes 1, 2, 4, 8, 16, 32, 64
+generate random integers to fill in each one
+run on array
+save data 
+repeat

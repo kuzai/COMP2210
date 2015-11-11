@@ -31,3 +31,8 @@ K = 1.9983537946290597
 This call to method TimingLab.timeTrial(1024) took 1857.752 seconds.
 R = 4.003663615573474
 K = 2.0013207652501643
+
+
+
+
+
